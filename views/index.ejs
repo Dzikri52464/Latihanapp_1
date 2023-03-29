@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan wheater apps</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <form action="/" method="POST">
+                <input type="text" class="ghost-input" name="city" placeholder="Enter a city" required>
+                <input type="submit" class="ghost-button" value="Get weather">
+            </form>
+            <% if(weather !== null){ %>
+                <p><%= weather %></p>
+            <% } %>
+            <% if(error !== null) {%>
+                <p><%= error %></p>
+            <% } %>  
+
+                
+        </fieldset>
+    </div>
+</body>
+</html>
